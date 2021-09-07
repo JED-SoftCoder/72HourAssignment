@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using _72HourAssignment.WebAPI.Providers;
 using _72HourAssignment.WebAPI.Models;
+using _72HourAssignment.Data;
 
 namespace _72HourAssignment.WebAPI
 {
