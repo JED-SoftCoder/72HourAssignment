@@ -54,12 +54,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PostService.cs" />
     <Compile Include="Services.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\72HourAssignment.Data\72HourAssignment.Data.csproj">
+      <Project>{878abcb0-f339-4c7e-bd92-4cefc4db25ca}</Project>
+      <Name>72HourAssignment.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\72HourAssignment.Models\72HourAssignment.Models.csproj">
+      <Project>{81fcb471-f771-446d-9f07-c2952b0a92a2}</Project>
+      <Name>72HourAssignment.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

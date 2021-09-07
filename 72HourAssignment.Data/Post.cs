@@ -18,7 +18,7 @@ namespace _72HourAssignment.Data
         public List<Comment> Comments { get; set; }
         [Required]
         public Guid AuthorId { get; set; }
-
+        
 
     }
 }
