@@ -10,6 +10,7 @@ using System.Web.Http;
 
 namespace _72HourAssignment.WebAPI.Controllers
 {
+    [Authorize]
     public class PostController : ApiController
     {
         private PostService CreatePostService()
