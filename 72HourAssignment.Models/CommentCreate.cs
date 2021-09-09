@@ -14,5 +14,8 @@ namespace _72HourAssignment.Models
         [MaxLength(100, ErrorMessage = "There are too many characters in this field.")]
         public string Text { get; set; }
 
+        [Required]
+        public int PostId { get; set; }
+
     }
 }

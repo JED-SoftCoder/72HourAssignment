@@ -22,7 +22,9 @@ namespace _72HourAssignment.Services
                 new Comment()
                 {
                     AuthorId = _userId,
-                    Text = model.Text
+                    Text = model.Text,
+                    PostId = model.PostId
+
 
                 };
 
