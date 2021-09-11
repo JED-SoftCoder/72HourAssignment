@@ -65,7 +65,7 @@ namespace _72HourAssignment.Services
                 var entity =
                     ctx
                     .Comments
-                    .Single(e => e.CommentId == id && e.AuthorId == _userId);
+                    .Single(e => e.PostId == id && e.AuthorId == _userId);
                 return
                     new CommentDetail
                     {
