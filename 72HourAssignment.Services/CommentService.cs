@@ -57,5 +57,24 @@ namespace _72HourAssignment.Services
                     
             }
         }
+
+        public CommentDetail GetCommentById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Comments
+                    .Single(e => e.CommentId == id && e.AuthorId == _userId);
+                return
+                    new CommentDetail
+                    {
+                        CommentId = entity.CommentId,
+                        Text = entity.Text,
+                        Replies = entity.Replies,
+                        PostId = entity.PostId
+                    };
+            } 
+        }
     }
 }

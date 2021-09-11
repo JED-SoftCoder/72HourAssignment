@@ -37,5 +37,12 @@ namespace _72HourAssignment.WebAPI.Controllers
             var comments = commentService.GetComments();
             return Ok(comments);
         }
+
+        public IHttpActionResult GetCommentById(int id)
+        {
+            CommentService commentService = CreateCommentService();
+            var comment = commentService.GetCommentById(id);
+            return Ok(comment);
+        }
     }
 }
