@@ -37,5 +37,11 @@ namespace _72HourAssignment.WebAPI.Controllers
             var replies = replyService.GetReplies();
             return Ok(replies);
         }
+        public IHttpActionResult GetReplyByCommentId(int id)
+        {
+            ReplyService replyService = CreateReplyService();
+            var reply = replyService.GetReplyById(id);
+            return Ok(reply);
+        }
     }
 }
